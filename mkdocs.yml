@@ -1,0 +1,74 @@
+site_name: From Learning to Contributing
+site_description: My Open Source Internship Journey at iGrad AI Labs
+site_author: Hemawarshini Mahendran
+
+theme:
+  name: material
+
+  palette:
+    - scheme: default
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    - scheme: slate
+      primary: blue
+      accent: cyan
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.tabs.link
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - "🏠 Home": index.md
+  - "👤 About Me": about-me.md
+  - "🏢 About iGrad AI Labs": about-igrad.md
+  - "🎯 Internship Overview": internship-overview.md
+
+  - "📚 Learning Journey":
+      - "n8n Courses": learnings.md
+      - "Open Source Contributions": projects.md
+      - "Automation Projects": technologies.md
+
+  - "🛠️ Skills & Technologies": challenges.md
+  - "🏆 Achievements": achievements.md
+  - "🙏 Conclusion": conclusion.md
+
+extra_css:
+  - assets/css/extra.css
+
+extra_javascript:
+  - assets/js/custom.js
+
+extra_css:
+  - https://unpkg.com/aos@2.3.4/dist/aos.css
+  - assets/css/extra.css
+
+extra_javascript:
+  - https://unpkg.com/aos@2.3.4/dist/aos.js
+  - assets/js/custom.js
